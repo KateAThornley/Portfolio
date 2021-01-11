@@ -24,9 +24,9 @@
             <img class="goop" src="images/Goop.svg" alt="Goop">
         </header>
         <div class="social-header">
-            <ul>
-                <li><a href=https://www.linkedin.com/in/kate-a-w-thornley/" target="_blank"><img src="images/Linkedin Logo.svg" alt="LinkedIn Logo"></a></li>
-                <li><a href="https://www.instagram.com/kat_is_evil" target="_blank"><img src="images/Instagram Logo.svg" alt="Instagram Logo"></a></li>
+            <ul class="social-anim">
+                <li ><a href=https://www.linkedin.com/in/kate-a-w-thornley/" target="_blank"><img src="images/Linkedin Logo.svg" alt="LinkedIn Logo"></a></li>
+                <li ><a href="https://www.instagram.com/kat_is_evil" target="_blank"><img src="images/Instagram Logo.svg" alt="Instagram Logo"></a></li>
                 <li><a href="https://github.com/KateAThornley" target="_blank"><img src="images/Git Logo.svg" alt="Git Logo"></a></li>
             </ul>
         </div>
@@ -34,7 +34,7 @@
 
     <div class="hero">
         <div class="content">
-            <h1>Eager to learn, ready to create<img class="hero-period" src="images/Hero Period.svg" alt="Period"></h1>
+            <h1 class="content-anim">Eager to learn, ready to create<img class="hero-period" src="images/Hero Period.svg" alt="Period"></h1>
             <div class="meet">
                 <svg class="arrow-down" width="32" height="42" viewBox="0 0 32 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.8253 39.0231C16.4281 39.6035 15.5718 39.6035 15.1747 39.0231L5.11024 24.3147C4.65611 23.651 5.13135 22.75 5.93553 22.75L26.0645 22.75C26.8686 22.75 27.3439 23.651 26.8898 24.3147L16.8253 39.0231Z" stroke="#ABDFAB" stroke-width="2"/>
@@ -47,25 +47,25 @@
         </div>
         <svg class="hero-design" width="415" height="464" viewBox="0 0 415 464" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_i)">
-            <circle cx="114" cy="46" r="46" fill="#F1F1F1"/>
+            <circle class="circle1-anim" cx="114" cy="46" r="46" fill="#F1F1F1"/>
             </g>
             <g filter="url(#filter1_d)">
-            <circle cx="269" cy="241" r="46" fill="#002C2A"/>
+            <circle class="circle2-anim" cx="269" cy="241" r="46" fill="#002C2A"/>
             </g>
             <g filter="url(#filter2_d)">
-            <circle cx="361" cy="407" r="46" fill="#FF4274"/>
+            <circle class="circle3-anim" cx="361" cy="407" r="46" fill="#FF4274"/>
             </g>
             <g filter="url(#filter3_d)">
-            <circle cx="148" cy="158" r="46" fill="#002C2A"/>
+            <circle class="circle4-anim" cx="148" cy="158" r="46" fill="#002C2A"/>
             </g>
             <g filter="url(#filter4_i)">
-            <circle cx="46" cy="241" r="46" fill="#F1F1F1"/>
+            <circle class="circle5-anim" cx="46" cy="241" r="46" fill="#F1F1F1"/>
             </g>
             <g filter="url(#filter5_d)">
-            <circle cx="148" cy="316" r="46" fill="#002C2A"/>
+            <circle class="circle6-anim" cx="148" cy="316" r="46" fill="#002C2A"/>
             </g>
             <g filter="url(#filter6_i)">
-            <circle cx="114" cy="418" r="46" fill="#F1F1F1"/>
+            <circle class="circle7-anim" cx="114" cy="418" r="46" fill="#F1F1F1"/>
             </g>
             <defs>
             <filter id="filter0_i" x="68" y="0" width="96" height="96" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -228,6 +228,25 @@
             </a>
             <img class="footer-img" src="images/Footer Elements.svg" alt="Footer">
     </footer>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+<script>
+
+    //HERO CONTENT ANIMATIONS
+    gsap.from('.content-anim', {opacity:0, duration:1.3, y:-50})
+    gsap.from('.meet', {opacity:0, duration:1.3, y:-50})
+    gsap.from('.hero-period', {delay: 1,duration:1, y:-500, ease:'Bounce.easeOut'})
+
+    // HERO CIRCLE ANIMATIONS
+    gsap.from('.circle1-anim', {opacity:0, duration:1.3})
+    gsap.from('.circle2-anim', {opacity:0, duration:1.3, delay:.3})
+    gsap.from('.circle3-anim', {opacity:0, duration:1.3, delay:1.3})
+    gsap.from('.circle4-anim', {opacity:0, duration:1.3, delay:.7})
+    gsap.from('.circle5-anim', {opacity:0, duration:1.3, delay:.9})
+    gsap.from('.circle6-anim', {opacity:0, duration:1.3, delay:1.1})
+    gsap.from('.circle7-anim', {opacity:0, duration:1.3, delay:.5})
+
+</script>
 
 </body>
 </html>

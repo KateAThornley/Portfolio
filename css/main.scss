@@ -275,7 +275,7 @@ footer {
 
     font-size: 55%;
     img {
-      width: 85%;
+      width: 5%;
     }
   }
   .lets-chat {
@@ -457,6 +457,7 @@ footer {
     position: absolute;
     right: 45%;
     width: 70px;
+    z-index: -1;
     margin-top: -5%;
   }
   .meet {

@@ -323,7 +323,7 @@ footer .footer-logo {
     display: none;
   }
   body img {
-    width: 85%;
+    width: 5%;
   }
   .lets-chat {
     margin-top: 2em;
@@ -500,6 +500,7 @@ footer .footer-logo {
     position: absolute;
     right: 45%;
     width: 70px;
+    z-index: -1;
     margin-top: -5%;
   }
   .meet {

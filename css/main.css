@@ -121,7 +121,8 @@ header ul a {
   position: absolute;
   right: 10%;
   width: 50px;
-  padding-top: 0px;
+  z-index: -1;
+  top: 30%;
 }
 
 section {
@@ -251,7 +252,7 @@ section {
 }
 
 .lets-chat {
-  margin-top: -4em;
+  margin-top: -2em;
   font-size: 18px;
   margin-bottom: 3em;
   display: -ms-grid;
@@ -311,6 +312,24 @@ footer .footer-logo {
   width: 200px;
 }
 
+@media only screen and (max-width: 380px) {
+  body {
+    font-size: 55%;
+  }
+  body header {
+    padding: 2em 2em 2em 4em;
+  }
+  body header .goop {
+    display: none;
+  }
+  body img {
+    width: 85%;
+  }
+  .lets-chat {
+    margin-top: 2em;
+  }
+}
+
 @media only screen and (min-width: 800px) {
   .nav-container ul li {
     padding: 0 1em;
@@ -318,6 +337,7 @@ footer .footer-logo {
         align-content: center;
   }
   .hero .content {
+    padding: 6em 8em 6em 8em;
     text-align: left;
   }
   .hero .content .meet {
@@ -329,7 +349,8 @@ footer .footer-logo {
     position: absolute;
     right: 35%;
     width: 50px;
-    padding-top: 0px;
+    top: 20%;
+    z-index: -1;
   }
   section {
     padding: 0;
@@ -514,11 +535,47 @@ footer .footer-logo {
   header {
     padding: 2em 2em 2em 10em;
   }
+  header .goop {
+    left: 12em;
+  }
   .social-header {
     padding: 2em 0em 3em 0em;
   }
+  .hero .content {
+    padding: 10em 20em 10em 20em;
+  }
   section {
-    padding: 7em 20em 2em 20em;
+    padding: 4em 20em 2em 20em;
+  }
+}
+
+@media only screen and (min-width: 1850px) {
+  header {
+    padding: 2em 2em 2em 15em;
+  }
+  header .goop {
+    padding-left: 7em;
+  }
+  .social-header {
+    padding: 2em 0em 3em 0em;
+  }
+  .hero .content {
+    padding: 10em 30em 4em 20em;
+  }
+  .hero .hero-design {
+    margin-left: -43%;
+    margin-top: 15%;
+    width: 100%;
+  }
+  .skills {
+    padding-left: 20em;
+    padding-right: 20em;
+  }
+  .skills .skills-container ul li {
+    padding: 2em;
+  }
+  section {
+    padding: 4em 30em 4em 30em;
   }
 }
 /*# sourceMappingURL=main.css.map */

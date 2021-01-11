@@ -524,6 +524,13 @@ footer .footer-logo {
   header {
     padding: 2em 2em 2em 5em;
   }
+  .drip {
+    position: absolute;
+    right: 45%;
+    width: 50px;
+    z-index: -1;
+    top: 70%;
+  }
   .social-header {
     padding: 2em 0em 3em 0em;
   }
@@ -543,7 +550,7 @@ footer .footer-logo {
     padding: 2em 0em 3em 0em;
   }
   .hero .content {
-    padding: 10em 20em 10em 20em;
+    padding: 10em 20em 5em 20em;
   }
   section {
     padding: 4em 20em 2em 20em;

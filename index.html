@@ -47,26 +47,26 @@
         </div>
         <svg class="hero-design" width="415" height="464" viewBox="0 0 415 464" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_i)">
-            <circle class="circle1-anim" cx="114" cy="46" r="46" fill="#F1F1F1"/>
+            <circle class="circle-anim" cx="114" cy="46" r="46" fill="#F1F1F1"/>
             </g>
             <g filter="url(#filter1_d)">
-            <circle class="circle2-anim" cx="269" cy="241" r="46" fill="#002C2A"/>
-            </g>
-            <g filter="url(#filter2_d)">
-            <circle class="circle3-anim" cx="361" cy="407" r="46" fill="#FF4274"/>
+            <circle class="circle-anim" cx="269" cy="241" r="46" fill="#002C2A"/>
             </g>
             <g filter="url(#filter3_d)">
-            <circle class="circle4-anim" cx="148" cy="158" r="46" fill="#002C2A"/>
+            <circle class="circle-anim" cx="148" cy="158" r="46" fill="#002C2A"/>
             </g>
             <g filter="url(#filter4_i)">
-            <circle class="circle5-anim" cx="46" cy="241" r="46" fill="#F1F1F1"/>
+            <circle class="circle-anim" cx="46" cy="241" r="46" fill="#F1F1F1"/>
             </g>
             <g filter="url(#filter5_d)">
-            <circle class="circle6-anim" cx="148" cy="316" r="46" fill="#002C2A"/>
+            <circle class="circle-anim" cx="148" cy="316" r="46" fill="#002C2A"/>
             </g>
             <g filter="url(#filter6_i)">
-            <circle class="circle7-anim" cx="114" cy="418" r="46" fill="#F1F1F1"/>
+            <circle class="circle-anim" cx="114" cy="418" r="46" fill="#F1F1F1"/>
             </g>
+            <g filter="url(#filter2_d)">
+                <circle class="circle-anim" cx="361" cy="407" r="46" fill="#FF4274"/>
+                </g>
             <defs>
             <filter id="filter0_i" x="68" y="0" width="96" height="96" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
             <feFlood flood-opacity="0" result="BackgroundImageFix"/>
@@ -156,7 +156,7 @@
     
             <div class="left2">
                 <a href="https://github.com/CDH-Studio/I-Talent" target="_blank">Application Development</a>
-                <p>For 8 months I worked full-time on developing the front-end of a job-searching application for the Government of Canada. I worked primarily in JavaScript with a React framework, and HTML/CSS. During sprints I would develop, implement and adjust my mockups to find what worked best for our clients while also meeting WCAG 2.0 AA accessibility standards.</p>
+                <p>For 8 months I worked full-time on developing the front-end of a job-searching application for the Government of Canada. I worked primarily in JavaScript with a React framework, and HTML/CSS. During sprints I would develop, implement and adjust my mockups to find what worked best for our clients while also meeting WCAG 2.0 AA standards.</p>
             </div>
             <div class="right2">
                     <img class="work-img-2" src="images/italent.jpg" alt="ITalent Image">
@@ -165,7 +165,7 @@
     
             <div class="left3">
                 <a href="https://github.com/HumamShwaikh/MLHumanities" target="_blank">Merging Arts and CS</a>
-                <p>I’m a firm believer of the STEAM movement, and as such I’m always trying to blend the arts into my CS projects. Thus, using Python’s Spacy, my friend Humam Shwaikh and I created an ML program that performs basic sentiment analysis on literature, in order to show how computing can be used to better understand art. </p>
+                <p>I’m a firm believer of the STEAM movement, and as such I’m always trying to blend the arts into my CS projects. An example: using Python’s Spacy, my friend Humam Shwaikh and I created an ML program that performs basic sentiment analysis on literature, in order to show how computing can be used to better understand art. </p>
             </div>
             <div class="right3">
                 <img class="work-img-3" src="images/NLP-project.jpg" alt="NLP Image">
@@ -188,7 +188,7 @@
                         <img src="images/frontend-dev.svg" alt="Code Icon">
                     </div>
                     <p class="skills-title">Front-end Development</p>
-                    <p class="featured-desc skill-desc">While I have a roster of languages under my belt such as Python, Java, and C+, my true love for CS lies in the front-end world, leading me to be proficient in JavaScript, HTML, and CSS/SCSS. I have a solid understanding of the WCAG and how to meet them.  </p>
+                    <p class="featured-desc skill-desc">While I have a roster of languages under my belt such as Python, Java, and C++, my true love for CS lies in the front-end world, leading me to be proficient in JavaScript, HTML, and CSS/SCSS. I also have a solid understanding of the WCAG standards and how to meet them.</p>
                 </li>
                 <li class="transition2 three">
                     <div class="icon-container three">
@@ -229,22 +229,37 @@
             <img class="footer-img" src="images/Footer Elements.svg" alt="Footer">
     </footer>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 <script>
 
     //HERO CONTENT ANIMATIONS
     gsap.from('.content-anim', {opacity:0, duration:1.3, y:-50})
     gsap.from('.meet', {opacity:0, duration:1.3, y:-50})
-    gsap.from('.hero-period', {delay: 1,duration:1, y:-500, ease:'Bounce.easeOut'})
+    gsap.from('.hero-period', {delay: .8,duration:1, y:-500, ease:'Bounce.easeOut'})
 
     // HERO CIRCLE ANIMATIONS
-    gsap.from('.circle1-anim', {opacity:0, duration:1.3})
-    gsap.from('.circle2-anim', {opacity:0, duration:1.3, delay:.3})
-    gsap.from('.circle3-anim', {opacity:0, duration:1.3, delay:1.3})
-    gsap.from('.circle4-anim', {opacity:0, duration:1.3, delay:.7})
-    gsap.from('.circle5-anim', {opacity:0, duration:1.3, delay:.9})
-    gsap.from('.circle6-anim', {opacity:0, duration:1.3, delay:1.1})
-    gsap.from('.circle7-anim', {opacity:0, duration:1.3, delay:.5})
+    //gsap.from('.circle-anim', {opacity:0, duration:1.2, stagger:.3})
+
+    //WORK ANIMATIONS
+    let tl= gsap.timeline({
+        scrollTrigger:{
+            trigger: '.left1'
+        }
+    });
+
+    tl.from(".right1",{x:900, opacity:0, duration:1.5})
+    .from(".right2",{x:900, opacity:0, duration:1.5},"=-1")
+    .from(".right3",{x:900, opacity:0, duration:1.5},"=-1")
+
+    //SKILL ANIMATIONS
+    let tl2= gsap.timeline({
+        scrollTrigger:{
+            trigger: '.skills-container'
+        }
+    });
+
+    tl2.from('.transition2', {delay: .8,duration:1, y:-60, ease:'Bounce.easeOut',stagger:.3})
+    //gsap.from('.transition2', {delay: .8,duration:1, y:-500, ease:'Bounce.easeOut', stagger:.8})
 
 </script>
 

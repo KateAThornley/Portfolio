@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="keywords" content=", CSS, JavaScript"> -->
     <title>Kate Thornley</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/main.css">
@@ -28,6 +29,7 @@
                 <li ><a href=https://www.linkedin.com/in/kate-a-w-thornley/" target="_blank"><img src="images/Linkedin Logo.svg" alt="LinkedIn Logo"></a></li>
                 <li ><a href="https://www.instagram.com/kat_is_evil" target="_blank"><img src="images/Instagram Logo.svg" alt="Instagram Logo"></a></li>
                 <li><a href="https://github.com/KateAThornley" target="_blank"><img src="images/Git Logo.svg" alt="Git Logo"></a></li>
+                <li><a href="files/Kate Thornley - Resume - 2021.pdf" download><img src="images/Resume Logo.svg" alt="Resume Download"></a></li>
             </ul>
         </div>
     </div>
@@ -145,7 +147,7 @@
             </div>
             <div class="right0"></div>
             <div class="left1">
-                <a href="https://www.figma.com/file/VIT9eAGGrUYkOX4kyVXSyT/Portfolio-Version-1-versus-Version-4?node-id=0%3A1" target="_blank">Figma Designs</a>
+                <a href="https://www.figma.com/file/VIT9eAGGrUYkOX4kyVXSyT/Portfolio-Version-1-versus-Version-4?node-id=0%3A1" target="_blank">Wireframes</a>
                 <p>Through the use of online tools like Figma, I make high fidelity wireframes for various school, client, and personal projects. Designing mockups allows me to better my understanding of design fundamentals like whitespace, visual hierarchy, consistency, and scale. Check out my 1st Figma draft for a portfolio site vs my final draft <a target="_blank"style="color:#ff4274; font-size:20px; display:inline-block; padding:0px" href="https://www.figma.com/file/VIT9eAGGrUYkOX4kyVXSyT/Portfolio-Version-1-versus-Version-4?node-id=0%3A1">here!</a></p>
             </div>
             <div class="right1">
@@ -168,7 +170,17 @@
             </div>
             <div class="right3">
                 <img class="work-img-3" src="images/NLP-project.jpg" alt="NLP Image">
+                <hr class="break" style="background-color:#002c2a; margin-top:3em; width:60px; font-weight: bold;">
             </div>
+
+            <div class="left4">
+                <a href="https://www.figma.com/file/cRWfCPadLHK5zqWWVy32RX/Generic-School-Icons?node-id=0%3A1" target="_blank">Graphic Design</a>
+                <p>I spend my free time exploring various mediums of art because I know that my best work comes from a place of well-rounded creative exploration. I’ve had experience designing logos, landing page layouts, band merchandise, icons, and more. A few examples of some school-themed icons I’m currently working on can be found <a target="_blank"style="color:#ff4274; font-size:20px; display:inline-block; padding:0px" href="https://www.figma.com/file/cRWfCPadLHK5zqWWVy32RX/Generic-School-Icons?node-id=0%3A1">here.</a></p>
+            </div>
+            <div class="right4">
+                <img class="work-img-4" src="images/work4.jpg" alt="Graphic Design Image">
+            </div>
+            
     
         </section>
     <section id="skills" class="skills">
@@ -249,6 +261,8 @@
     tl.from(".right1",{x:900, opacity:0, duration:1.5})
     .from(".right2",{x:900, opacity:0, duration:1.5},"=-1")
     .from(".right3",{x:900, opacity:0, duration:1.5},"=-1")
+    .from(".right4",{x:900, opacity:0, duration:1.5},"=-1")
+    //.to(".hero-period", {duration: 3, x: 100, y: 100, scale: 2, skewX: 45, rotation: 180});
 
     //SKILL ANIMATIONS
     let tl2= gsap.timeline({
@@ -258,9 +272,10 @@
     });
 
     tl2.from('.transition2', {delay: .8,duration:1, y:-60, ease:'Bounce.easeOut',stagger:.3})
-    //gsap.from('.transition2', {delay: .8,duration:1, y:-500, ease:'Bounce.easeOut', stagger:.8})
+
 
 </script>
+<script src="portfoilo.js"></script>
 
 </body>
 </html>

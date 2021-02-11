@@ -38,8 +38,8 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 2em;
 }
 
@@ -48,8 +48,8 @@ header nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .goop {
@@ -182,7 +182,7 @@ section {
   padding: 2em;
   margin-bottom: 1em;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .skills-container ul li .icon-container {
@@ -210,8 +210,8 @@ section {
   font-size: 28px;
   color: #002c2a;
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .skills-container ul li .featured-desc {
@@ -281,8 +281,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 2em;
   background-color: #002c2a;
 }
@@ -292,8 +292,8 @@ footer nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 footer ul {
@@ -331,7 +331,7 @@ footer .footer-logo {
   .nav-container ul li {
     padding: 0 1em;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
   }
   .hero .content {
     padding: 6em 8em 6em 8em;
@@ -361,11 +361,12 @@ footer .footer-logo {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 60% auto;
-        grid-template-columns: 60% auto;
+    grid-template-columns: 60% auto;
   }
   .work .right1,
   .work .right2,
-  .work .right3 {
+  .work .right3,
+  .work .right4 {
     position: relative;
     overflow: hidden;
     display: -webkit-box;
@@ -374,13 +375,14 @@ footer .footer-logo {
   }
   .work .work-img-1,
   .work .work-img-2,
-  .work .work-img-3 {
+  .work .work-img-3,
+  .work .work-img-4 {
     margin-left: 4em;
     position: absolute;
     width: 23em;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
   .work .break {
     display: none;
@@ -392,8 +394,8 @@ footer .footer-logo {
   .skills-container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(0, 1fr))[3];
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+    -ms-grid-columns: (minmax(0, 1fr)) [3];
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     grid-gap: 1em;
   }
   .skills-container ul .transition2.one {
@@ -410,7 +412,7 @@ footer .footer-logo {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    grid-template-columns: 66% auto;
   }
   .about-me .right {
     display: -webkit-box;
@@ -424,7 +426,7 @@ footer .footer-logo {
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-item-align: center;
-        align-self: center;
+    align-self: center;
   }
   .lets-chat {
     margin-top: 0em;
@@ -445,7 +447,7 @@ footer .footer-logo {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    grid-template-columns: 66% auto;
     background: unset;
   }
   .nav-container header {
@@ -469,8 +471,8 @@ footer .footer-logo {
   }
   .social-header ul {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -482,7 +484,7 @@ footer .footer-logo {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 66% auto;
-        grid-template-columns: 66% auto;
+    grid-template-columns: 66% auto;
     background: unset;
     padding: 0;
   }

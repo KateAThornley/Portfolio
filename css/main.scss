@@ -324,14 +324,16 @@ footer {
     grid-template-columns: 60% auto;
     .right1,
     .right2,
-    .right3 {
+    .right3,
+    .right4 {
       position: relative;
       overflow: hidden;
       display: flex;
     }
     .work-img-1,
     .work-img-2,
-    .work-img-3 {
+    .work-img-3,
+    .work-img4 {
       margin-left: 4em;
       position: absolute;
       width: 23em;
